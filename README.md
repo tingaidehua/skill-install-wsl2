@@ -14,6 +14,7 @@ gh skill install tingaidehua/skill-install-wsl2 skill-install-wsl2 --agent curso
 
 ```powershell
 git clone https://github.com/tingaidehua/skill-install-wsl2.git
+# 技能本体在 skills/skill-install-wsl2/
 ```
 
 ## Configure
