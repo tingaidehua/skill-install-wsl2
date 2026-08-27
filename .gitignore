@@ -1,0 +1,6 @@
+*.local
+config.env.local
+frps.toml
+frpc.toml
+.DS_Store
+Thumbs.db
