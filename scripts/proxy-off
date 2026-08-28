@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+  echo "短命代理进不了子进程。bash 里敲:  proxy-off" >&2
+  echo "或:  . /usr/local/bin/proxy-off" >&2
+  exit 1
+fi
+# shellcheck disable=SC1091
+. /etc/wsl-proxy-cmd.bash
+proxy-off

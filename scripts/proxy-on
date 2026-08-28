@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# 被 source 时打开当前 shell 代理；直接执行会失败并提示。
+if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
+  echo "短命代理进不了子进程。bash 里敲:  proxy-on" >&2
+  echo "或:  . /usr/local/bin/proxy-on" >&2
+  exit 1
+fi
+# shellcheck disable=SC1091
+. /etc/wsl-proxy-cmd.bash
+proxy-on
